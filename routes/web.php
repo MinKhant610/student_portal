@@ -19,7 +19,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/contact', function () {
-    return view('form.contact-us');
+    return view('contact.contact-us');
 });
 
 Route::get('/dashboard', function () {

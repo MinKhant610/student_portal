@@ -6,7 +6,7 @@
         </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link text-light" href="#about">About Our Deparment</a>
+          <a class="nav-link text-light" href="/#about">About Our Deparment</a>
           <a class="nav-link text-light" href="/register">For Student</a>
           <a class="nav-link text-light" href="/login">For Teacher</a>
         </div>
