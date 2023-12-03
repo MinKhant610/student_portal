@@ -50,5 +50,4 @@
                     </button>
             </div>
     </form>
-</div>
 </x-form.form-wrapper>

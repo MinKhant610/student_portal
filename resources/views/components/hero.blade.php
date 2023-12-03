@@ -12,7 +12,7 @@
               This website is for mechtronics students from technological university hamwbi. In this website you can find your semester grade result easily.We are helping our students for alwalys.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-              <a href="/login" class="nav-link bg-secondary text-light rounded link-hover" style="width: 115px">Find Grade</a>
+              <a href="/student_protal" class="nav-link bg-secondary text-light rounded link-hover" style="width: 115px">Find Grade</a>
           </div>
         </div>
     </div>

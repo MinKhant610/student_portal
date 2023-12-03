@@ -2,7 +2,7 @@
     <x-nav></x-nav>
     <x-subnav></x-subnav>
     <x-wrapper>
-        <div class="container overflow-hidden">
+        <div class="container">
             <div class="row gx-5">
 
               <div class="col">
