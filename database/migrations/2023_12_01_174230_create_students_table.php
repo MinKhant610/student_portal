@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('roll');
-            $table->year('enrollment_year');
+            $table->string('year');
+            $table->char('sub1');
+            $table->char('sub2');
             $table->timestamps();
         });
     }

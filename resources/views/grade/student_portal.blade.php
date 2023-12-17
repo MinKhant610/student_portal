@@ -11,7 +11,7 @@
         @if (session('error'))
         <p style="color: red;">{{ session('error') }}</p>
         @endif
-        <form action="/get-results" method="POST">
+        <form action="/get_result" method="GET">
             @csrf
 
             <!-- Name -->
@@ -35,12 +35,10 @@
             >
                 <option value="first_year">First Year</option>
                 <option value="second_year">Second Year</option>
-                <option value="second_year">Third Year</option>
-                <option value="second_year">Fourth Year</option>
-                <option value="second_year">Fifth Year</option>
-                <option value="second_year">Final Year</option>
-
-                <!-- Add more options as needed -->
+                <option value="third_year">Third Year</option>
+                <option value="fourth_year">Fourth Year</option>
+                <option value="fifth_year">Fifth Year</option>
+                <option value="final_year">Final Year</option>
             </select>
 
             <div class="flex items-center justify-end mt-4">

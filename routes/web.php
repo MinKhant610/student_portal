@@ -14,7 +14,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/student_protal', [StudentController::class, 'find']);
-Route::post('/get-results', [StudentController::class, 'getResults']);
+Route::get('/get_result', [StudentController::class, 'getResults']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
