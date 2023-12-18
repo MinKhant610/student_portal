@@ -7,3 +7,13 @@ hr{
     margin: 0 auto;
     color: blue;
 }
+
+.text {
+    width: 400px;
+    text-align: justify;
+}
+
+.text p {
+    display: inline-block;
+    width: 100%;
+}

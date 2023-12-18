@@ -18,6 +18,11 @@ return new class extends Migration
             $table->string('year');
             $table->char('sub1');
             $table->char('sub2');
+            $table->char('sub3');
+            $table->char('sub4');
+            $table->char('sub5');
+            $table->char('sub6');
+            $table->char('sub7');
             $table->timestamps();
         });
     }
