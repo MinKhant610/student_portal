@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'roll', 'year'];
+    protected $fillable = ['name', 'roll', 'year', 'sub1', 'sub2', 'sub3', 'sub4', 'sub5', 'sub6', 'sub7'];
 
     public function scopeFilter($query, $filter){
         $query->when($filter['roll'] ?? false, function ($query, $roll) {
@@ -23,5 +23,4 @@ class Student extends Model
             $query->where('name', 'like', '%' . $name . '%');
         });
     }
-
 }

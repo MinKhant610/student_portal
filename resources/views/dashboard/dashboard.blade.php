@@ -23,7 +23,6 @@
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">No</th>
                             <th scope="col">Name</th>
                             <th scope="col">Year</th>
                             <th scope="col" colspan="2">Action</th>
@@ -32,14 +31,13 @@
                         <tbody>
                             @foreach ($students as $student)
                             <tr>
-                            <th scope="row">{{$student->id}}</th>
                                 <td>{{$student->name}}</td>
                                 <td>{{$student->year}}</td>
                                 <td>
-                                    <a href="" class="btn btn-warning"> Edit </a>
+                                    <a href="/dashboard/students/{{$student->id}}/edit" class="btn btn-warning"> Edit </a>
                                 </td>
                                 <td>
-                                    <form action=""
+                                    <form action="/dashboard/students/{{$student->id}}/delete"
                                     method="POST">
                                         @csrf
                                         @method('DELETE')

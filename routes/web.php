@@ -17,9 +17,18 @@ Route::get('/contact', function () {
 Route::get('/student_protal', [StudentController::class, 'find']);
 Route::get('/get_result', [StudentController::class, 'getResults']);
 
-Route::get('/dashboard', [DashboardController::class, 'all'])->middleware(['auth', 'verified'])->name('dashboard');
-Route::get('/admin/students/', [DashboardController::class, 'edit'])->middleware(['auth']);
+//Dashboard
+Route::middleware('auth')->group(function() {
+    Route::get('/dashboard', [DashboardController::class, 'all'])->name('dashboard');
+    Route::get('/dashboard/create/', [DashboardController::class, 'create'])->name('create');
+    Route::post('/dashboard/store/', [DashboardController::class, 'store']);
+    Route::delete('/dashboard/students/{student:id}/delete', [DashboardController::class, 'destroy']);
+    Route::get('/dashboard/students/{student:id}/edit', [DashboardController::class, 'edit']);
+    Route::patch('/dashboard/students/{student:id}/update', [DashboardController::class, 'update']);
 
+});
+
+//Profile
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
