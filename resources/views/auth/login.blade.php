@@ -1,8 +1,15 @@
 <x-app-layout>
+    <x-nav></x-nav>
+    <x-subnav></x-subnav>
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-
+    <div>
+        <a href="/student">
+            <img src="/images/teacher.png" alt="student-logo"
+            class="w-20 h-20 fill-current text-gray-500 mx-auto">
+        </a>
+    </div>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 

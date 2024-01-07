@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
@@ -16,9 +17,8 @@ Route::get('/contact', function () {
 Route::get('/student_protal', [StudentController::class, 'find']);
 Route::get('/get_result', [StudentController::class, 'getResults']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'all'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/admin/students/', [DashboardController::class, 'edit'])->middleware(['auth']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

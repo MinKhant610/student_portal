@@ -39,7 +39,7 @@
                   </tr>
                   <tr>
                     <th scope="row">1</th>
-                    <td>English</td>
+                    <td>Engineering Mathematics III</td>
                     <td>{{$student->sub1}}</td>
                   </tr><tr>
                     <th scope="row">2</th>

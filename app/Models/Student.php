@@ -20,7 +20,7 @@ class Student extends Model
         });
 
         $query->when($filter['name']??false, function ($query, $name){
-            $query->where('name', $name);
+            $query->where('name', 'like', '%' . $name . '%');
         });
     }
 
