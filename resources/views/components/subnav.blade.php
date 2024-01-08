@@ -8,7 +8,8 @@
         <div class="navbar-nav">
           <a class="nav-link text-light" href="/#about">About Our Deparment</a>
           <a class="nav-link text-light" href="/student_protal">For Student</a>
-          <a class="nav-link text-light" href="/login">For Teacher</a>
+          <a class="nav-link text-light" href="/login">
+            {{auth()->user() ? "Dashboard" : "For Teacher" }}</a>
         </div>
       </div>
     </div>
