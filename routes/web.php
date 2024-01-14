@@ -20,6 +20,7 @@ Route::get('/get_result', [StudentController::class, 'getResults']);
 //Dashboard
 Route::middleware('auth')->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'all'])->name('dashboard');
+    Route::get('/dashboard/students/{student:id}/check', [DashboardController::class, 'check']);
     Route::get('/dashboard/create/', [DashboardController::class, 'create'])->name('create');
     Route::post('/dashboard/store/', [DashboardController::class, 'store']);
     Route::delete('/dashboard/students/{student:id}/delete', [DashboardController::class, 'destroy']);

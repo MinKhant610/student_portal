@@ -25,7 +25,7 @@
                           <tr>
                             <th scope="col">Name</th>
                             <th scope="col">Year</th>
-                            <th scope="col" colspan="2">Action</th>
+                            <th scope="col" colspan="3">Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -33,6 +33,9 @@
                             <tr>
                                 <td>{{$student->name}}</td>
                                 <td>{{$student->year}}</td>
+                                <td>
+                                    <a href="/dashboard/students/{{$student->id}}/check" class="btn btn-success"> check </a>
+                                </td>
                                 <td>
                                     <a href="/dashboard/students/{{$student->id}}/edit" class="btn btn-warning"> Edit </a>
                                 </td>

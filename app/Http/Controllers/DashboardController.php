@@ -42,6 +42,12 @@ class DashboardController extends Controller
         return back();
     }
 
+    public function check(Student $student){
+        return view('dashboard.check', [
+            'student' => $student
+        ]);
+    }
+
     public function edit(Student $student){
         return view('dashboard.edit', [
             'student' => $student

@@ -1,13 +1,6 @@
-@props(['students'])
+@props(['student'])
 <x-app-layout>
-    <x-nav></x-nav>
-    <x-subnav></x-subnav>
-
-    @if ($students->isEmpty())
-    <x-notfound></x-notfound>
-    @else
-    @foreach ($students as $student)
-    @endforeach
+    @include('layouts.navigation')
     @if ($student->year == "first_year")
         <x-first :student="$student"></x-first>
     @endif
@@ -23,8 +16,5 @@
     @if ($student->year == "fifth_year")
         <x-fifth :student="$student"></x-fifth>
     @endif
-
-    @endif
-
 </x-app-layout>
 

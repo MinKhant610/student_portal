@@ -32,7 +32,7 @@
                 <option value="third_year">Third Year</option>
                 <option value="fourth_year">Fourth Year</option>
                 <option value="fifth_year">Fifth Year</option>
-                <option value="final_year">Final Year</option>
+                {{-- <option value="final_year">Final Year</option> --}}
             </select>
 
             <!-- subject -->

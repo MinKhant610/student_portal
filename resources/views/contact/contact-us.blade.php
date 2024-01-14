@@ -9,9 +9,9 @@
                 <x-form.location></x-form.location>
               </div>
 
-              <div class="col">
+              {{-- <div class="col">
                 <x-form.send-message></x-form.send-message>
-              </div>
+              </div> --}}
             </div>
           </div>
     </x-wrapper>
